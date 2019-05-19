@@ -29,7 +29,7 @@
   	    <fileset dir="lib" includes="**"/> 
   	</copy>
    	<copy file="LICENSE" toDir="${dest}" overwrite="yes" />
-  	<copy file="README" toDir="${dest}" overwrite="yes" />
+  	<copy file="README.md" toDir="${dest}" overwrite="yes" />
   	<copy file="NOTICE" toDir="${dest}" overwrite="yes" />
   	<copy file="initial.board" toDir="${dest}" overwrite="yes" />
   </target>
@@ -46,7 +46,7 @@
   	
              	
   <target name="jar" depends="compile">
-   	<jar basedir="${compile}" destfile="${dest}/maxsat.jar">
+   	<jar basedir="${compile}" destfile="${dest}/usagi_reversi.jar">
   	  <manifest>
     	<attribute name="Main-Class" value="main.Main" />
     	<attribute name="Class-Path" value="${classpath}" />
